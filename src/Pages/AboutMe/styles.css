@@ -1,0 +1,185 @@
+.header-aboutMe{
+    width: 100%;
+    min-height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    color: white;
+    overflow: hidden;
+}
+
+.containerContentHeader h1{
+    font-size: clamp(2rem, 2.5vw, 3rem);
+    font-family: poppins;
+}
+
+.boxTxtIntroAboutme{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 60vh;
+}
+
+.containerAboutMe{
+    background: linear-gradient(360deg,#25282b 0%, #0c0c0c 80%);
+}
+
+.boxLeftTxt{
+    width: 50%;
+    background-color: #0c0c0c;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 2rem;
+    gap: 1.5rem;
+    font-family: poppins;
+}
+
+.boxLeftTxt p{
+   line-height: 1.7;
+}
+
+.boxRightTxt{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #25282b;
+    box-shadow: 4px 8px 12px rgb(0, 0, 0, 0.1);
+}
+
+.boxRightTxt img{
+    border-top-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+}
+.animation3{
+    width: 110%;
+}
+
+.boxLinguagens{
+    color: white;
+    display: flex;
+}
+
+.boxLeftLinguagens{
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-family: poppins;
+    padding: 2rem;
+}
+
+@media(max-width: 800px){
+    .boxLinguagens{
+        flex-wrap: wrap;
+    }
+}
+
+.boxLeftLinguagens h2{
+    margin-bottom: 1rem;
+    border-bottom: 2px green;
+}
+
+.boxLeftLinguagens p{
+    line-height: 1.7;
+}
+
+.boxLeftLinguagens ul li{
+    list-style: none;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.boxRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 8rem;
+    padding: 2rem;
+}
+
+.itemRight{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 33px;
+    align-items: center;
+    width: 200px;
+    transition:  all ease-in-out 0.3s;
+    font-family: poppins;
+    font-weight: 700;
+}
+
+#html, #swift{
+background: linear-gradient(90deg,#e75800 0%, #f69400 80%);
+    box-shadow: 0px 0px 17px 3px rgba(255,122,0,0.75);
+    color: white;   
+}  
+
+#css, #react, #TypeScript{
+    background: linear-gradient(90deg,#0043ff 0%, #1172b8 80%);
+    box-shadow: 0px 0px 17px 3px rgba(6, 73, 188, 0.75);
+}
+
+#js{
+    background: linear-gradient(90deg,#f8f466 0%, #ffc500 80%);
+    color: black;
+    box-shadow: 0px 0px 17px 3px rgba(255, 234, 5, 0.75);
+}
+
+#php, #kotlin, #cSharp{
+    background: linear-gradient(90deg,#b500ff 0%, #4e1b76 80%);
+    box-shadow: 0px 0px 17px 3px rgba(112, 1, 156, 0.75);
+}
+
+#laravel{
+    background: linear-gradient(90deg,#ff0000 0%, #8d0000 80%);
+    box-shadow: 0px 0px 17px 3px rgba(255, 13, 13, 0.75);
+}
+
+#node{
+    background: linear-gradient(90deg,#0d8b1e 0%, #33b433 80%);
+    box-shadow: 0px 0px 17px 3px rgba(4, 138, 33, 0.75);
+}
+
+#git{
+    background: linear-gradient(90deg,#fe5300 0%, #b44633 80%);
+    box-shadow: 0px 0px 17px 3px #fe5300;
+}
+
+#gitHub{
+    background: linear-gradient(90deg,#202020 0%, #000000 80%);
+    box-shadow: 0px 0px 17px 3px #000000;
+}
+
+
+
+.itemRight:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.itemRight img{
+    width: 30px;
+}
+
+@media (max-width: 700px){
+    .boxTxtIntroAboutme{
+        flex-direction: column;
+    }
+
+    .boxLeftTxt{
+        width: 100%;
+    }
+
+    .boxRightTxt{
+        width: 100%;
+    }
+}

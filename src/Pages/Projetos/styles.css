@@ -1,0 +1,277 @@
+.header-Projetos{
+    width: 100%;
+    min-height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    color: white;
+    overflow: hidden;
+}
+
+.containerContentHeader h1{
+    font-size: clamp(2rem, 2.5vw, 3rem);
+    font-family: poppins;
+}
+
+.containerProjetos{
+    background: #0c0c0c;
+    color: white;
+    padding: 2rem;
+    margin-top: 5rem;
+    overflow: hidden;
+}
+
+.projetos{
+    position: relative;
+    border: 3px solid #1b443c;
+    border-radius: 33px;
+    padding: 2rem;
+    margin-top: 5rem;
+}
+
+.titleProjetos{
+    position: absolute;
+    top: -1.8rem;
+    z-index: 1;
+    background-color: #0c0c0c;
+    width: fit-content;
+    font-family: poppins;
+    color: #1b443c;
+}
+
+.boxProjetos{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8rem 8rem;
+}
+
+.cardProjeto{
+    border-radius: 22px;
+    max-width: 750px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 2rem;
+    position: relative;
+    border: 3px solid #1b443c;
+    padding: 3px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 25px 0px rgba(27,68,60,0.75);
+}
+
+.cardProjeto:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.cardContent{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    background: #0c0c0c;
+    border-radius: 22px;
+}
+
+.cardTopSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardTopSection img{
+    width: 300px;
+    border-radius: 22px;
+    border:  5px solid #1b443c;
+    box-shadow: 0px 0px 25px 0px rgba(27,68,60,0.75);
+}
+
+.cardProjetoContent{
+    display: flex;
+}
+
+.cardText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: poppins;
+}
+
+.cardText h2{
+    font-size: 15pt;
+}
+
+.cardText p{
+    font-size: 10pt;
+}
+
+.cardList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.animiationList1{
+    background: linear-gradient(90deg,#055f05 0%, #457e45 80%);
+    border-radius: 50%;
+    width: 50px;
+    padding: 0.6rem;
+    box-shadow: 0px 0px 25px 0px rgba(27,68,60,0.75);
+}
+
+.detalhesOverlay{
+    background-color: #0c0c0c;
+    opacity: 1;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardProjeto:nth-child(4) img {
+  width: 200px;
+  background-color: #010f2b;
+  border: none;
+  padding: 1rem;
+}
+
+.boxModal{
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem;
+    border-radius: 22px;
+    border:  5px solid #1b443c;
+    box-shadow: 0px 0px 25px 0px rgba(27,68,60,0.75);
+    font-family: poppins;
+}
+
+.boxLing{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    font-size: 10pt;
+    font-family: poppins;
+}
+
+.front{
+    width: fit-content;
+    border-radius: 22px;
+    background-color: #1b443c;
+    padding: 0.5rem;
+}
+
+.back{
+    width: fit-content;
+    border-radius: 22px;
+    background-color: #002820;
+    padding: 0.5rem;
+}
+
+.boxClose{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.boxClose img{
+    width: 60px;
+    transition: all 0.3s ease-in-out;
+}
+
+.boxClose img:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+.modalContent h2{
+    color: #1b443c;
+    border-bottom: 3px solid #1b443c;
+    width: fit-content;
+    margin-bottom: 1rem;
+}
+
+.modalContent p{
+    max-width: 600px;
+    font-size: 11pt;
+    line-height: 1.7;
+}
+
+.modalTop img{
+    max-width: 400px;
+    border-radius: 22px;
+}
+
+.boxLinkMOdal button{
+    margin-top: 2rem;
+    font-size: 11pt;
+    padding: 0.5rem;
+    border-radius: 33px;
+    border: none;
+    color: #1b443c;
+    width: 150px;
+    border:  2px solid #1b443c;
+    font-family: poppins;
+    box-shadow: 0px 0px 25px 0px rgba(27,68,60,0.75);
+    background-color: #161616;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.boxLinkMOdal button:hover{
+    transform: scale(1.05);
+    background-color: #002820;
+    color: white;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 740px){
+    .cardContent{
+        flex-direction: column;
+    }
+
+    .cardProjetoContent{
+        flex-direction: column;
+    }
+
+    .cardList{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 1rem;
+        gap: 2rem;
+    }
+
+    .cardProjeto{
+        height: 500px;
+    }
+}

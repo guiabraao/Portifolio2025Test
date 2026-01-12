@@ -1,0 +1,131 @@
+.header-contact{
+    width: 100%;
+    min-height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    color: white;
+    overflow: hidden;
+}
+
+.containerContato{
+    background-color: #0c0c0c;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boxLeftContato{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.boxForm form{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    width: 500px;
+    height: 500px;
+    max-width: 500px;
+    max-height: 500px;
+    gap: 1rem;
+    border:  5px solid #1b443c;
+    box-shadow: 0px 0px 25px 0px rgba(27,68,60,0.75);
+    font-family: poppins;
+    border-radius: 22px;
+}
+
+.boxForm form h2{
+    margin-bottom: 1rem;
+    color: #1b443c;
+}
+
+.boxForm form input{
+    font-family: poppins;
+    outline: none;
+    border: none;
+    box-shadow: 4px 8px 12px rgb(0, 0, 0, 0.1);
+    padding: 0.8rem;
+    border-radius: 22px;
+}
+
+.boxForm form textarea{
+    font-family: poppins;
+    outline: none;
+    border: none;
+    box-shadow: 4px 8px 12px rgb(0, 0, 0, 0.1);
+    padding: 0.8rem;
+    resize: vertical;
+    height: 100%;
+    border-radius: 22px;
+}
+
+.boxForm form input:focus,
+.boxForm form textarea:focus{
+    color: white;
+    background-color: #1b443c;
+    border: 2px solid white;
+}
+
+.boxForm form button{
+    padding: 0.8rem;
+    border-radius: 22px;
+    border: none;
+    font-weight: 700;
+    font-family: poppins;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+    background-color: #1b443c;
+    color: white;
+}
+
+.boxForm form button:hover{
+    transform: scale(1.03);
+    color: white;
+    background-color: #399180;
+}
+
+.boxRightContato{
+    width: 50%;
+}
+
+.boxAnimation3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animation3{
+    width: 70%;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: poppins;
+    font-size: 10pt;
+    padding: 1rem;
+    color: white;
+}
+
+@media (max-width: 1000px){
+    .containerContato{
+        flex-direction: column;
+    }
+
+    .boxLeftContato{
+        width: 100%;
+    }
+
+    .boxRightContato{
+        width: 100%;
+    }
+}

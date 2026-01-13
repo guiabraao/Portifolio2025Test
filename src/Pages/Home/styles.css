@@ -6,7 +6,7 @@
 
 header {
     width: 100%;
-    min-height: 75vh;
+    min-height: 55vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,6 +65,19 @@ header {
     display: none;
 }
 
+.btnExpandirHeader{
+    perspective: 800px;
+}
+
+.btnExpandirHeader img{
+    transition: transform 0.6s ease-in-out;
+    transform-style: preserve-3d
+}
+
+.btnExpandirHeader.ativo img{
+    transform: rotateX(180deg);
+}
+
 @media(max-width: 700px) {
     .nav-list-header{
         display: none;
@@ -104,7 +117,6 @@ header {
     .navList ul {
         display: flex;
         flex-wrap: wrap;
-        background-color: rgb(19, 140, 84);
         justify-content: center;
         align-items: center;
         text-align: center;

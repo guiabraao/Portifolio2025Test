@@ -112,15 +112,15 @@ export default function AboutMe() {
                     </ul>
                 </div>
                 <div className={"container-header-mob" + (expanded ? " expanded" : "")}>
-                    <div className="btnExpandirHeader" onClick={toggleNav}>
+                    <div  className={`btnExpandirHeader ${expanded ? "ativo" : ""}`} onClick={toggleNav}>
                         <img src={Menu} alt="Menu Bar" />
                     </div>
                     <div className={"navList" + (expanded ? " show" : "")}>
                         <ul>
-                            <Link to='/' className="linkItem"><li className="boxNavItem"><span>Home</span></li></Link>
-                            <Link to='/sobremim' className="linkItem"><li className="boxNavItem"><span>Sobre-Mim</span></li></Link>
-                            <Link to='/projetos' className="linkItem"><li className="boxNavItem"><span>Projetos</span></li></Link>
-                            <Link to='/contato' className="linkItem"><li className="boxNavItem"><span>Contato</span></li></Link>
+                            <Link to='/' className="linkItem"><li className="boxNavItem" data-aos="fade-down" data-aos-delay="200"><span>Home</span></li></Link>
+                            <Link to='/sobremim' className="linkItem"><li className="boxNavItem" data-aos="fade-down" data-aos-delay="600"><span>Sobre-Mim</span></li></Link>
+                            <Link to='/projetos' className="linkItem"><li className="boxNavItem" data-aos="fade-down" data-aos-delay="1000"><span>Projetos</span></li></Link>
+                            <Link to='/contato' className="linkItem"><li className="boxNavItem" data-aos="fade-down" data-aos-delay="1400"><span>Contato</span></li></Link>
                         </ul>
                     </div>
                 </div>

@@ -131,27 +131,27 @@ function Home() {
                         <h2>Minhas <span className='habilidades'>Habilidades</span></h2>
                         <p>Algumas de minhas habilidades que agregam ao desenvolvimento de aplicações.</p>
                     </div>
-                    <div className="containerSkills" data-aos="fade-down">
-                        <div className="itemSkills">
+                    <div className="containerSkills">
+                        <div className="itemSkills" data-aos="fade-down" data-aos-delay="200">
                             <div className="itemSkillsTop">
                                 <img src={Team} alt="IconSkill 1" />
                                 <h2>Trabalho em equipe</h2>
                             </div>
-                            <div className="contentItemSkills"><p>Durante esses anos na área tive muitos trabalhos em equipe, também com o estagio aprendi muito sobre trabalho em equipe.</p></div>
+                            <div className="contentItemSkills"><p>Boa adaptação a ambientes colaborativos, contribuindo com ideias, ouvindo feedbacks e trabalhando em conjunto para alcançar melhores soluções.</p></div>
                         </div>
-                        <div className="itemSkills">
+                        <div className="itemSkills" data-aos="fade-down" data-aos-delay="600">
                             <div className="itemSkillsTop">
                                 <img src={Mobile} alt="IconSkill 2" />
-                                <h2>Engineering Management</h2>
+                                <h2>Comunicação Clara</h2>
                             </div>
-                            <div className="contentItemSkills"><p>Tenho experiencias com o desenvolvimento mobile, conhecendo linguagens como Swift(IOS) e o Flutter(Android).</p></div>
+                            <div className="contentItemSkills"><p>Capacidade de entender demandas, explicar soluções técnicas de forma simples e manter um bom alinhamento com equipes e clientes.</p></div>
                         </div>
-                        <div className="itemSkills">
+                        <div className="itemSkills" data-aos="fade-down" data-aos-delay="1000">
                             <div className="itemSkillsTop">
                                 <img src={Code} alt="IconSkill 3" />
-                                <h2>Engineering Management</h2>
+                                <h2>UI/UX Design</h2>
                             </div>
-                            <div className="contentItemSkills"><p>I help teams execute engineering projects that address complex challenges and exceed expectations.</p></div>
+                            <div className="contentItemSkills"><p>Criação de interfaces intuitivas e funcionais, com foco em usabilidade, hierarquia visual e experiência do usuário, unindo estética e eficiência.</p></div>
                         </div>
                     </div>
                 </div>
@@ -160,7 +160,8 @@ function Home() {
                     <h2><span className="curiosidade">Curiosidades</span> Sobre-Mim</h2>
                     <div className="containerAbtMe">
                         <div className="txtAbtMe">
-                            <p>Começei minha jornada na programação em 2022, quando entrei no Colégio Cotemig, onde durante três anos consegui construir uma base sólida para o mecardo de trabalho. Lá foram anos de grande aprendizado, em 2024 formei no curso de Desenvolvimentos Web e Mobile. Em 2025 ingressei na faculdade de Análise e Desenvolvimento de Sistemas na PUC MINAS, onde ainda estou cursando no segundo período.   </p>
+                            <p>Comecei minha jornada na programação em 2022, no Colégio Técnico Cotemig, onde cursei Desenvolvimento Web e Mobile. Foi lá que descobri minha paixão por desenvolvimento web, web design e front-end — área em que decidi focar minha carreira.</p>
+                            <p>Gosto de transformar ideias em interfaces modernas, funcionais e bem pensadas, unindo código, design e experiência do usuário. Tenho interesse especial por projetos visuais, animações, landing pages e experiências interativas na web.</p>
                         </div>
                         <div className="boxLottie1">
                             <div className="animation1">
@@ -173,7 +174,7 @@ function Home() {
                 <div className="boxProjetosHome">
                     <div className="txtProjetos">
                         <h2>Meus <span className="projetosLabel">Projetos</span></h2>
-                        <p>Alguns dos meus principais projetos pessoais, onde desenvolvi sozinho.</p>
+                        <p>Alguns dos meus principais projetos pessoais.</p>
                     </div>
                     <div className="containerProjetos">
                         <div className="lista-projetos" data-aos="zoom-in">

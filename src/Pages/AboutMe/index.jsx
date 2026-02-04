@@ -87,9 +87,9 @@ export default function AboutMe() {
 
     useEffect(() => {
         const options = {
-            strings: ["Guilherme Junqueira Abraão"],
-            typeSpeed: 80,
-            backSpeed: 20,
+            strings: ["Sobre Mim", "Guilherme Junqueira Abraão"],
+            typeSpeed: 100,
+            backSpeed: 50,
             loop: true,
         };
 
@@ -97,6 +97,24 @@ export default function AboutMe() {
 
         return () => {
             typed.current.destroy();
+        };
+    }, []);
+
+    const el2 = useRef(null);
+    const typed2 = useRef(null);
+
+    useEffect(() => {
+        const options = {
+            strings: ["Experiência Profissional"],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true,
+        };
+
+        typed2.current = new Typed(el2.current, options);
+
+        return () => {
+            typed2.current.destroy();
         };
     }, []);
 
@@ -134,7 +152,10 @@ export default function AboutMe() {
                 <div className="boxTxtIntroAboutme">
                     <div className="boxLeftTxt">
                         <h1><span ref={el} className="frase2"></span></h1>
-                        <p>Duis rhoncus tincidunt magna eget dictum. Nulla eu eros molestie, fringilla mi non, tempor sem. Sed quis dignissim dolor. Donec vulputate nisl in lacus laoreet faucibus. Vestibulum aliquet, metus ac interdum vulputate, nulla lacus tincidunt sapien, eu tincidunt erat augue sed nisi. Integer elementum bibendum metus vitae hendrerit. Maecenas posuere, mi sit amet dignissim vulputate, eros nisl scelerisque dui, vitae vulputate dolor magna sed dui. Nam pharetra at elit a convallis.</p>
+                        <p>Sou desenvolvedor com foco em Web e Front-end, com experiência em desenvolvimento de interfaces, web design e experiências digitais. Iniciei minha trajetória na programação em 2022, ao ingressar no Colégio Técnico Cotemig, onde cursei Desenvolvimento Web e Mobile. Durante a formação, tive contato com diversas tecnologias e projetos práticos, o que me permitiu desenvolver uma base sólida tanto em lógica quanto em construção de interfaces.</p>
+                        <p>Ao longo desse período, identifiquei-me especialmente com o desenvolvimento web e front-end, área em que pude unir programação, design e experiência do usuário. Tenho grande interesse em criar produtos digitais visualmente impactantes, funcionais e bem estruturados, sempre buscando equilíbrio entre estética, performance e usabilidade. </p>
+                        <h1><span ref={el2} className="frase3"></span></h1>
+                        <p>Em 2025, atuei como estagiário desenvolvedor na William Indústria Aeronáutica, onde desenvolvi uma landing page institucional e colaborei com o time de marketing digital, apoiando a gestão de redes sociais e comunicação visual. Após o estágio, iniciei minha atuação como freelancer, desenvolvendo projetos web e landing pages, com destaque para o projeto ASAP, focado em front-end, design responsivo e performance.</p>
                     </div>
                     <div className="boxRightTxt">
                         <div className="animation3">
